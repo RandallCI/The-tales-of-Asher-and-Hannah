@@ -32,6 +32,7 @@ li {
 
 
 
+
 /* Custom class formatting */
 
 .centered_items {
@@ -73,4 +74,17 @@ li {
 
 .turn_page_backward_button :hover {
     background-color: green;
+}
+
+.story_text {
+    font-size: larger;
+    font-weight: bold;
+    text-align: center;
+    background-color: lightgreen;
+}
+
+.position_story_text {
+    width: 50%;
+    text-align: center;
+   
 }
