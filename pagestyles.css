@@ -1,0 +1,75 @@
+/* page background formatting */
+
+/* Native element formatting */
+body {
+    background-color: blue;
+}
+
+h1 {
+    font-family: cursive;
+}
+h2 {
+    font-family: cursive;
+}
+
+ol {
+    text-align: left;
+    padding: 10px;
+    padding-top: 5px;
+    list-style: none;
+    
+    font-family: fantasy;
+    float: left;
+    display: flex;
+}
+ol :hover {
+    background-color: green;
+}
+
+li {
+    padding-left: 20px;
+}
+
+
+
+/* Custom class formatting */
+
+.centered_items {
+    text-align: center;
+}
+
+.navigation_bar {
+    background-color: aliceblue;
+    width: auto;
+    padding: auto;
+    height: 90px;
+}
+
+/* Page direction buttons */
+.turn_page_forward_button {
+    background-color: white;
+    width: 40px;
+    height: 40px;
+    position: relative;
+    left: 95%;
+    padding: 3px;
+    top: 200px;
+}
+
+.turn_page_forward_button :hover {
+    background-color: green;
+}
+
+.turn_page_backward_button {
+    background-color: white;
+    width: 40px;
+    height: 40px;
+    position: relative;
+    left: 3px;
+    padding: 3px;
+    top: 160px;
+}
+
+.turn_page_backward_button :hover {
+    background-color: green;
+}
