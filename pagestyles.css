@@ -40,9 +40,10 @@ li {
 
 .navigation_bar {
     background-color: aliceblue;
-    width: auto;
+    width: 100%;
     padding: auto;
     height: 90px;
+    position:static;
 }
 
 /* Page direction buttons */
@@ -53,7 +54,7 @@ li {
     position: relative;
     left: 95%;
     padding: 3px;
-    top: 200px;
+    top: 5px;
 }
 
 .turn_page_forward_button :hover {
@@ -65,9 +66,9 @@ li {
     width: 40px;
     height: 40px;
     position: relative;
-    left: 3px;
+    left: 5%;
     padding: 3px;
-    top: 160px;
+    top: -20px;
 }
 
 .turn_page_backward_button :hover {
