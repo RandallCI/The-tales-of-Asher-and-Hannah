@@ -27,12 +27,7 @@ document.addEventListener('DOMContentLoaded', function() {
            } else {
             window.location.href = 'story_one_page_one.html';
            }
-          
        
      }
-    
-
-   
-     
     })
 })
