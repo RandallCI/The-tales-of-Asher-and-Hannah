@@ -2,7 +2,8 @@
 
 /* Native element formatting */
 body {
-    background-color: blue;
+    background-image: url("/Page_art/Bobbo_and_Panini.png");
+   width: 100%;
 }
 
 h1 {
@@ -40,8 +41,7 @@ li {
 }
 
 .navigation_bar {
-    background-color: aliceblue;
-    width: 100%;
+    width: auto;
     padding: auto;
     height: 90px;
     position:static;
@@ -53,7 +53,7 @@ li {
     width: 40px;
     height: 40px;
     position: relative;
-    left: 95%;
+    left: 75%;
     padding: 3px;
     top: 5px;
 }
@@ -81,8 +81,6 @@ li {
     font-weight: bold;
     background-color: lightgreen;
     position: relative;
-    top: 500px;
-    left: 30%;
 }
 
 .position_story_text {

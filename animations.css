@@ -1,25 +1,40 @@
 /* Page animations */
 
 .clouds {
-    background-color: aliceblue;
+    /* background-color: aliceblue; */
     position: relative;
     width: 100px;
-    height: 80px;
     animation-name: clouds_blowing;
     animation-duration: 250s;
     animation-delay: 1s;
     animation-iteration-count: infinite;
 }
 .clouds_two {
-    background-color: aliceblue;
+    /* background-color: aliceblue; */
     position: relative;
     width: 100px;
-    height: 90px;
     top: 50px;
     animation-name: clouds_blowing;
     animation-duration: 270s;
     animation-delay: 2s;
     animation-iteration-count: infinite;
+}
+
+.sun {
+   width: 100px;
+    padding-left: 200px;
+    padding-top: 10px;
+}
+
+
+.house {
+    position: fixed;
+    width: 150px;
+    height: 150px;
+    bottom: 5%;
+    text-align: center;
+    left: 40%;
+    
 }
 
 .see_saw {
@@ -36,6 +51,20 @@
     animation-iteration-count: infinite;
 }
 
+.complete_see_saw {
+    background-color: red;
+    width: 210px;
+    height: 10px;
+    position: relative;
+    top: 380px;
+    left: 100px;
+    
+    animation-name: see_saw_complete;
+    animation-duration: 10s;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+}
+
 .see_saw_base {
     background-color: red;
     width: 10px;
@@ -45,14 +74,7 @@
     left: 200px;
 }
 
-.house {
-    background-color: brown;
-    width: 100px;
-    height: 100px;
-    position: relative;
-    left: 30%;
-    top: 200px;
-}
+
 
 .tree {
     background-color: grey;
@@ -68,13 +90,6 @@
     animation-iteration-count: infinite;
 }
 
-.grass {
-    background-color: green;
-    width: 100%;
-    height: 200px;
-    top: 200px;
-}
-
 
 
 
@@ -83,16 +98,16 @@
 
 
 @keyframes clouds_blowing {
-    0% {background-color: antiquewhite; top: 50; left: 0px;}
-    10% {background-color: antiquewhite; top: 50; left: 90%;}
-    20% {background-color: antiquewhite; top: 50; left: 0px;}
-    30% {background-color: antiquewhite; top: 50; left: 90%;}
-    40% {background-color: antiquewhite; top: 50; left: 0px;}
-    50% {background-color: antiquewhite; top: 50; left: 90%;}
-    60% {background-color: antiquewhite; top: 50; left: 0px;}
-    70% {background-color: antiquewhite; top: 50; left: 90%;}
-    80% {background-color: antiquewhite; top: 50; left: 0px;}
-    90% {background-color: antiquewhite; top: 50; left: 90%;}
+    0% {top: 50; left: 0px;}
+    10% {top: 50; left: 90%;}
+    20% {top: 50; left: 0px;}
+    30% {top: 50; left: 90%;}
+    40% {top: 50; left: 0px;}
+    50% {top: 50; left: 90%;}
+    60% {top: 50; left: 0px;}
+    70% {top: 50; left: 90%;}
+    80% {top: 50; left: 0px;}
+    90% {top: 50; left: 90%;}
 }
 /* Partial animation of the see saw */
 @keyframes see_saw_partial {
