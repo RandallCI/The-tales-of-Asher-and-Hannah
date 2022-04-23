@@ -4,8 +4,8 @@
 
 
 
-
-//Check if the DOM has been loaded before doing these actions.
+//Navigate through the pages of story one.
+//Check if the DOM has been loaded before querying for HTML elements..
 document.addEventListener('DOMContentLoaded', function() {
 
     document.querySelectorAll('button').forEach(function(button) {
@@ -30,4 +30,20 @@ document.addEventListener('DOMContentLoaded', function() {
        
      }
     })
+})
+//Navigate through the story titles.
+//Check if the DOM is loaded before querying for HTML elements.
+document.addEventListener('DOMContentLoaded', function() {
+
+  document.querySelectorAll('li').forEach(function(li) {
+    li.onclick = function() {
+      if (document.querySelector('#home')) {
+        window.location.href = '/cover_page.html';
+      }
+      if (document.querySelector('#tale_one')) {
+        window.location.href = 'The_first_tale/story_one_page_one.html';
+      }
+     
+    }
+  })
 })
