@@ -27,12 +27,13 @@ document.addEventListener('DOMContentLoaded', function() {
            } else {
             window.location.href = 'story_one_page_one.html';
            }
-       
      }
     })
 })
-//Navigate through the story titles.
-//Check if the DOM is loaded before querying for HTML elements.
+
+
+// Navigate through the story titles.
+// Check if the DOM is loaded before querying for HTML elements.
 document.addEventListener('DOMContentLoaded', function() {
 
   document.querySelectorAll('li').forEach(function(li) {
@@ -40,10 +41,20 @@ document.addEventListener('DOMContentLoaded', function() {
       if (document.querySelector('#home')) {
         window.location.href = '/cover_page.html';
       }
-      if (document.querySelector('#tale_one')) {
-        window.location.href = 'The_first_tale/story_one_page_one.html';
-      }
      
     }
   })
+})
+
+document.addEventListener('DOMContentLoaded', function(){
+  const taleOne = document.getElementById('tale_one');
+  const taleTwo = document.getElementById('tale_two');
+
+
+  taleOne.onclick = function() {
+    window.location.href = 'The_first_tale/story_one_page_one.html';
+  }
+  taleTwo.onclick = function() {
+    window.location.href = 'The_second_tale/story_two_page_one.html';
+  }
 })
