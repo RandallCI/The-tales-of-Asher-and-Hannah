@@ -24,12 +24,20 @@ document.addEventListener('DOMContentLoaded', function() {
             window.location.href = 'story_one_page_six.html';
            }  else if (document.querySelector('#to_page_seven')) {
             window.location.href = 'story_one_page_seven.html';
-           } else {
-            window.location.href = 'story_one_page_one.html';
+           } else if (document.getElementById("page_seven").innerHTML == "Page seven") {
+              window.location.href = "/cover_page.html";
+              alert("The End! Well done!");
+              
            }
-     }
+       }
+          
     })
-})
+
+});
+
+
+
+
 
 
 // Navigate through the story titles.
@@ -44,7 +52,7 @@ document.addEventListener('DOMContentLoaded', function() {
      
     }
   })
-})
+});
 
 document.addEventListener('DOMContentLoaded', function(){
   const taleOne = document.getElementById('tale_one');
@@ -57,4 +65,4 @@ document.addEventListener('DOMContentLoaded', function(){
   taleTwo.onclick = function() {
     window.location.href = 'The_second_tale/story_two_page_one.html';
   }
-})
+});
